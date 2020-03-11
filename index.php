@@ -23,7 +23,7 @@ function get_ip()
 
 if(!isset($_GET['page']))
 {
-    require('CONTROLLER/accueil.php');
+    require('CONTROLER/accueil.php');
     return;
 }
 else

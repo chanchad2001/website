@@ -21,7 +21,7 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -40,7 +40,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!--<script src="js/modernizr-2.6.2.min.js"></script>-->
 
 	</head>
 	<body>
@@ -71,11 +71,11 @@
 					</div>
 					<div class="col-xs-11 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Accueil</a></li>
-							<li><a href="courses.html">Tutoriels</a></li>
-							<li><a href="pricing.html">Boutique</a></li>
+							<li class="active"><a href="index.php?page=accueil">Accueil</a></li>
+							<li><a href="index.php?page=tutoriel">Tutoriels</a></li>
+							<li><a href="index.php?page=boutique">Boutique</a></li>
 							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
+								<a href="index.php?page=blog">Blog</a>
 								<ul class="dropdown">
 									<li><a href="#">Web</a></li>
 									<li><a href="#">Minecraft Dev</a></li>
@@ -83,7 +83,7 @@
 									<!--<li><a href="#">API</a></li>-->
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="index.php?page=contact">Contact</a></li>
 							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Proposer un Tutoriel</span></a></li>
 						</ul>
@@ -112,6 +112,7 @@
 	</header>
 
 	<!-- ICI IL Y AURA LES PAGES -->
+	<?= $content ?>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -191,24 +192,24 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 	</body>
 </html>
