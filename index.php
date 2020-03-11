@@ -23,7 +23,7 @@ function get_ip()
 
 if(!isset($_GET['page']))
 {
-    require('CONTROLER/accueil.php');
+    require('CONTROLLERS/accueil.php');
     return;
 }
 else
@@ -31,19 +31,19 @@ else
     $page = $_GET['page'];
     switch ($page){
         case "tutoriel":
-            require('CONTROLER/tutoriel.php');
+            require('CONTROLLERS/tutoriel.php');
         break;
         case "boutique":
-            require('CONTROLER/boutique.php');
+            require('CONTROLLERS/boutique.php');
         break;
         case "blog":
-            require('CONTROLER/blog.php');
+            require('CONTROLLERS/blog.php');
         break;
         case "contact":
-            require('CONTROLER/contact.php');
+            require('CONTROLLERS/contact.php');
         break;
         default:
-            require('CONTROLER/accueil.php');
+            require('CONTROLLERS/accueil.php');
         break;  
     }
 }

@@ -53,7 +53,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
-						<p class="num">Telephone: +33 6 59 36 80 31</p>
+						<p class="num">Email: throowsdev@gmail.com</p>
 						<ul class="fh5co-social">
 							<li><a href="https://twitter.com/Throows" target="_blank"><i class="icon-twitter"></i></a></li>
 							<li><a href="https://www.instagram.com/throows/?hl=fr" target="_blank"><i class="icon-instagram"></i></a></li>
@@ -101,7 +101,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>La Programmation Accessible Pour Tous.</h1>
+							<h1>La Programmation Accessible A Tous.</h1>
 							<h2>Par La Communauté Pour la Communauté</h2>
 							<p><a class="btn btn-primary btn-lg btn-learn" href="#">Je commence</a> <a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Qui sommes nous ?</a></p>
 						</div>

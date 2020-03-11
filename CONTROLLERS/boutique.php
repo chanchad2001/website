@@ -1,5 +1,5 @@
 <?php
-include(dirname(__FILE__).'/../MODEL/boutique.php');
+include(dirname(__FILE__).'/../MODELS/boutique.php');
 # les variables des fonctions
 
-include(dirname(__FILE__).'/../VUE/boutique.php');
+include(dirname(__FILE__).'/../VIEWS/boutique.php');
