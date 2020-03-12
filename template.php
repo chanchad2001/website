@@ -1,3 +1,4 @@
+<?php require('MODELS/template.php'); ?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -67,23 +68,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-1">
-						<div id="fh5co-logo"><a href="index.html">Throows<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="index.php">Throows<span>.</span></a></div>
 					</div>
 					<div class="col-xs-11 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.php?page=accueil">Accueil</a></li>
-							<li><a href="index.php?page=tutoriel">Tutoriels</a></li>
-							<li><a href="index.php?page=boutique">Boutique</a></li>
-							<li class="has-dropdown">
+							<li class="<?= isActivePage("accueil"); ?>"><a href="index.php?page=accueil">Accueil</a></li>
+							<li class="<?= isActivePage("tutoriel"); ?>"><a href="index.php?page=tutoriel">Tutoriels</a></li>
+							<li class="<?= isActivePage("boutique"); ?>"><a href="index.php?page=boutique">Boutique</a></li>
+							<li class="has-dropdown <?= isActivePage("blog"); ?>">
 								<a href="index.php?page=blog">Blog</a>
 								<ul class="dropdown">
-									<li><a href="#">Web</a></li>
-									<li><a href="#">Minecraft Dev</a></li>
-									<li><a href="#">Game Engine Dev</a></li>
+									<li><a href="index.php?page=blog&blog=web">Web</a></li>
+									<li><a href="index.php?page=blog&blog=mc-dev">Minecraft Dev</a></li>
+									<li><a href="index.php?page=blog&blog=game-engine-dev">Game Engine Dev</a></li>
 									<!--<li><a href="#">API</a></li>-->
 								</ul>
 							</li>
-							<li><a href="index.php?page=contact">Contact</a></li>
+							<li class="<?= isActivePage("contact"); ?>"><a href="index.php?page=contact">Contact</a></li>
 							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Proposer un Tutoriel</span></a></li>
 						</ul>
