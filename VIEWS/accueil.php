@@ -296,24 +296,5 @@
 			</div>
 		</div>
 
-
-		<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Alors qu'attendez vous !</h2>
-						<p>Commencez dès à présent votre cours et agrandissez la communauté.</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<p><a href="#" class="btn btn-default btn-lg">je crée mon tutoriel !</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
 <?php $content = ob_get_clean();
 require('template.php');

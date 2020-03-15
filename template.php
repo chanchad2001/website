@@ -103,7 +103,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>La Programmation accessible Pour Tous.</h1>
+								<h1>La Programmation accessible à Tous.</h1>
 								<h2>Par La Communauté Pour la Communauté</h2>
 								<p><a class="btn btn-primary btn-lg btn-learn" href="#">Je commence</a> <a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Qui sommes nous ?</a></p>
 							</div>
@@ -115,6 +115,23 @@
 
 	<!-- ICI IL Y AURA LES PAGES -->
 	<?= $content; ?>
+
+		<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Alors qu'attendez vous !</h2>
+						<p>Commencez dès à présent votre cours et agrandissez la communauté.</p>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p><a href="#" class="btn btn-default btn-lg">je crée mon tutoriel !</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
