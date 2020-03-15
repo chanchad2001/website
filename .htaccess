@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteRule ^accueil$ /throows-dev/index.php?page=acceuil
+RewriteRule ^tutoriel$ /throows-dev/index.php?page=tutoriel
+RewriteRule ^boutique$ /throows-dev/index.php?page=boutique
+RewriteRule ^blog$ /throows-dev/index.php?page=blog
+RewriteRule ^contact$ /throows-dev/index.php?page=contact
