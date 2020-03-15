@@ -1,6 +1,21 @@
 RewriteEngine On 
+#accueil
 RewriteRule ^accueil$ /throows-dev/index.php?page=acceuil
+
+#tuto 
 RewriteRule ^tutoriel$ /throows-dev/index.php?page=tutoriel
+
+#boutique
 RewriteRule ^boutique$ /throows-dev/index.php?page=boutique
+
+#blog
+RewriteRule ^blog/web$ /throows-dev/index.php?page=blog&theme=web
+RewriteRule ^blog/mc-dev$ /throows-dev/index.php?page=blog&theme=mc-dev
+RewriteRule ^blog/game-engine-dev$ /throows-dev/index.php?page=blog&theme=game-engine-dev
 RewriteRule ^blog$ /throows-dev/index.php?page=blog
+
+#contact
 RewriteRule ^contact$ /throows-dev/index.php?page=contact
+
+#login
+RewriteRule ^login$ /throows-dev/index.php?page=login

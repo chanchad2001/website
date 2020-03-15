@@ -86,8 +86,8 @@
 									</ul>
 								</li>
 								<li class="<?= isActivePage("contact"); ?>"><a href="contact">Contact</a></li>
-								<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-								<li class="btn-cta"><a href="#"><span>Proposer un Tutoriel</span></a></li>
+								<li class="btn-cta"><a href="login"><span>Login</span></a></li>
+								<li class="btn-cta"><a href="tutoriel/create"><span>Proposer un Tutoriel</span></a></li>
 							</ul>
 						</div>
 					</div>

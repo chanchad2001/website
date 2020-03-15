@@ -42,6 +42,9 @@ else
         case "contact":
             require('CONTROLLERS/contact.php');
         break;
+        case "login":
+            require('CONTROLLERS/login.php');
+        break;
         default:
             require('CONTROLLERS/accueil.php');
         break;  
