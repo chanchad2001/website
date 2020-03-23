@@ -21,6 +21,32 @@ function get_ip()
     return $ip;
 }
 
+function getURL()
+{
+    $adresse = "";
+    $i = 0;
+    foreach($_GET as $cle => $valeur){
+        if($valeur != "login") $adresse .= $valeur;
+        $i++;
+    }
+    return $adresse;
+}
+
+
+
+function getDatabaseConnection()
+{
+    $server = "localhost";
+    $username = "admin";
+    $password = "";
+    $dbname = "throows_site";
+
+    $connection = new PDO("mysql:host=$server;dbname=$dbname", $username, $password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    return $connection;
+}
+
+
 if(!isset($_GET['page']))
 {
     require('CONTROLLERS/accueil.php');

@@ -1,6 +1,6 @@
 RewriteEngine On 
 #accueil
-RewriteRule ^accueil$ /throows-dev/index.php?page=acceuil
+RewriteRule ^accueil$ /throows-dev/index.php?page=accueil
 
 #tuto 
 RewriteRule ^tutoriel$ /throows-dev/index.php?page=tutoriel
@@ -18,4 +18,5 @@ RewriteRule ^blog$ /throows-dev/index.php?page=blog
 RewriteRule ^contact$ /throows-dev/index.php?page=contact
 
 #login
-RewriteRule ^login$ /throows-dev/index.php?page=login
+RewriteRule ^login/returnto=(.*)  /throows-dev/index.php?page=login&source=$1
+RewriteRule ^login/$  /throows-dev/index.php?page=login&source=accueil

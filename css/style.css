@@ -84,6 +84,13 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #EA9215;
 }
 
+.top-menu li img 
+{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
 .fh5co-nav {
   position: absolute;
   top: 0;
