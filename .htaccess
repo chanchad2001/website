@@ -2,6 +2,9 @@ RewriteEngine On
 #accueil
 RewriteRule ^accueil$ /throows-dev/index.php?page=accueil
 
+#profile
+RewriteRule ^profile/(.*) /throows-dev/index.php?page=profile&profile=$1
+
 #tuto 
 RewriteRule ^tutoriel$ /throows-dev/index.php?page=tutoriel
 

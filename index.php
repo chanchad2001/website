@@ -38,7 +38,7 @@ function getDatabaseConnection()
 {
     $server = "localhost";
     $username = "admin";
-    $password = "";
+    $password = "R0m@inDev2019";
     $dbname = "throows_site";
 
     $connection = new PDO("mysql:host=$server;dbname=$dbname", $username, $password);
@@ -55,24 +55,12 @@ if(!isset($_GET['page']))
 else
 {
     $page = $_GET['page'];
-    switch ($page){
-        case "tutoriel":
-            require('CONTROLLERS/tutoriel.php');
-        break;
-        case "boutique":
-            require('CONTROLLERS/boutique.php');
-        break;
-        case "blog":
-            require('CONTROLLERS/blog.php');
-        break;
-        case "contact":
-            require('CONTROLLERS/contact.php');
-        break;
-        case "login":
-            require('CONTROLLERS/login.php');
-        break;
-        default:
-            require('CONTROLLERS/accueil.php');
-        break;  
-    }
+
+    if($page == "tutoriel") require('CONTROLLERS/tutoriel.php');
+    else if($page == "boutique") require('CONTROLLERS/boutique.php');
+    else if($page == "blog") require('CONTROLLERS/blog.php');
+    else if($page == "contact") require('CONTROLLERS/contact.php');
+    else if($page == "login") require('CONTROLLERS/login.php');
+    else if($page == "profile") require('CONTROLLERS/profile.php');
+    else require('CONTROLLERS/accueil.php');
 }
