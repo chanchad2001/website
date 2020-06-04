@@ -46,7 +46,6 @@ function getDatabaseConnection()
     return $connection;
 }
 
-
 if(!isset($_GET['page']))
 {
     require('CONTROLLERS/accueil.php');
@@ -61,6 +60,6 @@ else
     else if($page == "blog") require('CONTROLLERS/blog.php');
     else if($page == "contact") require('CONTROLLERS/contact.php');
     else if($page == "login") require('CONTROLLERS/login.php');
-    else if($page == "profile") require('CONTROLLERS/profile.php');
+    else if($page == "profil") require('CONTROLLERS/profile.php');
     else require('CONTROLLERS/accueil.php');
 }

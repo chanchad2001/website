@@ -68,3 +68,5 @@ function existPseudo(string $pseudo = null) : bool
     if($requete->rowCount() == 0 ) return FALSE;
     else return TRUE;
 }
+
+?>
