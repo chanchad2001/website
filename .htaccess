@@ -36,3 +36,5 @@ RewriteRule ^login/$  /throows-dev/index.php?page=login&source=accueil
 
 #RewriteRule ^login/returnto=(.*)$ index.php?page=login&source=$1
 #RewriteRule ^login/$ index.php?page=login&source=accueil
+
+RewriteRule ^$ /throows-dev/index.php?page=accueil

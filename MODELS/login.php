@@ -29,7 +29,7 @@ function verify_credentials()
                 if($error == "")
                 {
                     $pwd = password_hash($pwd, PASSWORD_DEFAULT);
-                    $sql = "INSERT INTO client_account (name, pseudo, email, password) VALUES ('$name', '$pseudo', '$email', '$pwd') ";
+                    $sql = "INSERT INTO client_account (name, pseudo, email, password, image) VALUES ('$name', '$pseudo', '$email', '$pwd', 'defaut.png') ";
                     $connection = getDatabaseConnection();
                     $connection->exec($sql);
                     $account = getAccount($email);
@@ -44,8 +44,9 @@ function verify_credentials()
             $_SESSION['pseudo'] = $account['pseudo'];
             $_SESSION['login'] = TRUE;
             $_SESSION['photo'] = $account['image'];
-            echo "<h1/>Vous êtes connecté !</h1>";
-            header('Refresh: 2; http://192.168.1.43/throows-dev/'.$_GET['source']);
+            echo "<center><h1/>Vous êtes connecté !</h1></center>";
+            $url = str_replace("-", "/", $_GET['source']);
+            header('Refresh: 2; ../'. $url);
         }
         else echo $error;
     }

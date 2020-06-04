@@ -30,6 +30,7 @@ class="close" title="Close Modal">&times;</span>
   </form>
 </div>
 
+<?php verify_logout() ?>
 
 <div id="fh5co-contact">
 		<div class="container">
@@ -62,6 +63,9 @@ class="close" title="Close Modal">&times;</span>
 						</div>
 					</form>		
 					<button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Modifier mon profil</button>
+					<form action="" method="POST">
+					<input type="submit" value="déconnection" name ="logout" class="btn btn-primary">
+					</form> 
 				</div>
 			</div>
 		</div>

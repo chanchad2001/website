@@ -4,15 +4,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 text-center animate-box">
-						<span class="fh5co-counter js-counter" data-from="0" data-to="40356" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter js-counter" data-from="0" data-to="<?php echo getDatabaseConnection()->query("SELECT * FROM client_account")->rowCount()+1;  ?>" data-speed="5000" data-refresh-interval="50"></span>
 						<span class="fh5co-counter-label">Lecteurs</span>
 					</div>
 					<div class="col-md-3 text-center animate-box">
-						<span class="fh5co-counter js-counter" data-from="0" data-to="30290" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter js-counter" data-from="0" data-to="157" data-speed="5000" data-refresh-interval="50"></span>
 						<span class="fh5co-counter-label">Tutoriels</span>
 					</div>
 					<div class="col-md-3 text-center animate-box">
-						<span class="fh5co-counter js-counter" data-from="0" data-to="2039" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span>
 						<span class="fh5co-counter-label">Membres</span>
 					</div>
 					<div class="col-md-3 text-center animate-box">

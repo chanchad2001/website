@@ -24,11 +24,12 @@ function get_ip()
 function getURL()
 {
     $adresse = "";
-    $i = 0;
+    
     foreach($_GET as $cle => $valeur){
         if($valeur != "login") $adresse .= $valeur;
-        $i++;
+        $adresse .= "-";
     }
+    $adresse = rtrim($adresse, "-");
     return $adresse;
 }
 
