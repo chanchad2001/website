@@ -44,6 +44,7 @@ function verify_credentials()
             $_SESSION['pseudo'] = $account['pseudo'];
             $_SESSION['login'] = TRUE;
             $_SESSION['photo'] = $account['image'];
+            $_SESSION['id'] = $account['id'];
             echo "<center><h1/>Vous êtes connecté !</h1></center>";
             $url = str_replace("-", "/", $_GET['source']);
             header('Refresh: 2; ../'. $url);

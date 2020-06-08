@@ -26,8 +26,11 @@ function getURL()
     $adresse = "";
     
     foreach($_GET as $cle => $valeur){
-        if($valeur != "login") $adresse .= $valeur;
-        $adresse .= "-";
+        if($valeur != "login")
+        {
+            $adresse .= $valeur;
+            $adresse .= "-";
+        }
     }
     $adresse = rtrim($adresse, "-");
     return $adresse;
