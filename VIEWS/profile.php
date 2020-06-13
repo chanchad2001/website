@@ -79,7 +79,7 @@
 						</div>
 					</form>		
 					<form action="" method="POST">
-					<input type="submit" value="déconnection" name ="logout" class="btn btn-primary">
+						<input type="submit" value="déconnection" name ="logout" class="btn btn-primary">
 					</form> 
 				</div>
 			</div>

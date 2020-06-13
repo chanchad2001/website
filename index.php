@@ -28,7 +28,7 @@ function getURL()
     foreach($_GET as $cle => $valeur){
         if($valeur != "login")
         {
-            $adresse .= $valeur;
+            $adresse .= $valeur;    
             $adresse .= "-";
         }
     }

@@ -45,7 +45,7 @@ function modify_info()
                 {
                     if (move_uploaded_file($_FILES['avatar']['tmp_name'], $file)) 
                     {
-                        unlink("images/" . $_SESSION['photo']);
+                        if($_SESSION['photo'] != "defaut.png") unlink("images/" . $_SESSION['photo']);
                         $_SESSION['photo'] = $_FILES['avatar']['name'];
                     } else 
                     {

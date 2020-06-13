@@ -1,40 +1,31 @@
-RewriteEngine On 
+Options +FollowSymlinks
+RewriteEngine On
+
 #accueil
-RewriteRule ^accueil$ /throows-dev/index.php?page=accueil
-#RewriteRule ^accueil$ /index.php?page=accueil
+RewriteRule ^accueil$ index.php?page=accueil
 
 #profil
-RewriteRule ^profil/(.*) /throows-dev/index.php?page=profil&profile=$1
-#RewriteRule ^profil/(.*) /index.php?page=profil&profile=$1
+RewriteRule ^profil=(.*) index.php?page=profil&profile=$1
 
 #tuto 
-RewriteRule ^tutoriel$ /throows-dev/index.php?page=tutoriel
-#RewriteRule ^tutoriel$ /index.php?page=tutoriel
+RewriteRule ^tutoriel$ index.php?page=tutoriel
 
 #boutique
-RewriteRule ^boutique$ /throows-dev/index.php?page=boutique
-#RewriteRule ^boutique$ index.php?page=boutique
+RewriteRule ^boutique$ index.php?page=boutique
 
 #blog
-RewriteRule ^blog/web$ /throows-dev/index.php?page=blog&theme=web
-RewriteRule ^blog/mc-dev$ /throows-dev/index.php?page=blog&theme=mc-dev
-RewriteRule ^blog/game-engine-dev$ /throows-dev/index.php?page=blog&theme=game-engine-dev
-RewriteRule ^blog$ /throows-dev/index.php?page=blog
-
-#RewriteRule ^blog/web$ /index.php?page=blog&theme=web
-#RewriteRule ^blog/mc-dev$ /index.php?page=blog&theme=mc-dev
-#RewriteRule ^blog/game-engine-dev$ /index.php?page=blog&theme=game-engine-dev
-#RewriteRule ^blog$ /index.php?page=blog
+RewriteRule ^blog?web$ index.php?page=blog&autre=web
+RewriteRule ^blog?mc-dev$ index.php?page=blog&theme=mc-dev
+RewriteRule ^blog?game-engine-dev$ index.php?page=blog&theme=game-engine-dev
+RewriteRule ^blog$ index.php?page=blog
 
 #contact
-RewriteRule ^contact$ /throows-dev/index.php?page=contact
-#RewriteRule ^contact$ index.php?page=contact
+RewriteRule ^contact$ index.php?page=contact
 
 #login
-RewriteRule ^login/returnto=(.*) /throows-dev/index.php?page=login&source=$1
-RewriteRule ^login/$  /throows-dev/index.php?page=login&source=accueil
+RewriteRule ^login/returnto=(.*)$ index.php?page=login&source=$1 
+RewriteRule ^(login)$ index.php?page=login&source=accueil
 
-#RewriteRule ^login/returnto=(.*)$ index.php?page=login&source=$1
-#RewriteRule ^login/$ index.php?page=login&source=accueil
+RewriteRule ^$ index.php?page=accueil 
 
-RewriteRule ^$ /throows-dev/index.php?page=accueil
+#ErrorDocument 404 /throows-dev/index.php?page=accueil

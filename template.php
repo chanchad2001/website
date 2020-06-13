@@ -2,7 +2,8 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<base href="/throows-dev/">
+	<!-- <base href="/throows-dev/"> -->
+	<base href="/">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Throows &mdash; Community Website</title>
@@ -79,15 +80,15 @@
 								<li class="has-dropdown <?= isActivePage("blog"); ?>">
 									<a href="blog">Blog</a>
 									<ul class="dropdown">
-										<li><a href="blog/web">Web</a></li>
-										<li><a href="blog/mc-dev">Minecraft Dev</a></li>
-										<li><a href="blog/game-engine-dev">Game Engine Dev</a></li>
+										<li><a href="blog?web">Web</a></li>
+										<li><a href="blog?mc-dev">Minecraft Dev</a></li>
+										<li><a href="blog?game-engine-dev">Game Engine Dev</a></li>
 										<!--<li><a href="#">API</a></li>-->
 									</ul>
 								</li>
 								<li class="<?= isActivePage("contact"); ?>"><a href="contact">Contact</a></li>
 								<?= loginPage(); ?>
-								<li class="btn-cta"><a href="tutoriel/create"><span>Proposer un Tutoriel</span></a></li>
+								<li class="btn-cta"><a href="tutoriel?create"><span>Proposer un Tutoriel</span></a></li>
 							</ul>
 						</div>
 					</div>
