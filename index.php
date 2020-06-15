@@ -64,6 +64,10 @@ else
     else if($page == "blog") require('CONTROLLERS/blog.php');
     else if($page == "contact") require('CONTROLLERS/contact.php');
     else if($page == "login") require('CONTROLLERS/login.php');
-    else if($page == "profil") require('CONTROLLERS/profile.php');
+    else if($page == "profil")
+    {
+        if(isset($_GET['view']) && $_GET['view'] == "subscriber" && isset($_SESSION['id']))  require('CONTROLLERS/profileSubscriber.php');
+        else require('CONTROLLERS/profile.php');
+    } 
     else require('CONTROLLERS/accueil.php');
 }

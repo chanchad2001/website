@@ -5,7 +5,9 @@ RewriteEngine On
 RewriteRule ^accueil$ index.php?page=accueil
 
 #profil
-RewriteRule ^profil=(.*) index.php?page=profil&profile=$1
+RewriteRule ^profil/(.*)/viewas=subscriber$ index.php?page=profil&profile=$1&view=subscriber
+RewriteRule ^profil/(.*)$ index.php?page=profil&profile=$1
+
 
 #tuto 
 RewriteRule ^tutoriel$ index.php?page=tutoriel

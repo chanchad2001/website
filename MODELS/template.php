@@ -18,7 +18,7 @@ function loginPage()
         <?php
     }
     else{
-        $url = "profil=". $_SESSION['pseudo'];
+        $url = "profil/". $_SESSION['pseudo']."/viewas=subscriber";
         $photo = $_SESSION['photo'];
         ?>
         <li class="btn-cta"><a href="<?=$url ?>"><img src="images/<?= $photo ?>" alt=""></a></li>
